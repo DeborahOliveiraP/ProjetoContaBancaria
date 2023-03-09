@@ -1,6 +1,12 @@
 package domain;
 
 public class Cliente extends Conta {
+	
+	public Cliente(String pTitular) {
+		super(pTitular);
+		// TODO Auto-generated constructor stub
+	}
+	
 	private int id;
 	private int cpf;
 	private int rg;
