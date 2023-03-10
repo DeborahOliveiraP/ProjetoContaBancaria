@@ -1,5 +1,6 @@
 package domain;
 
-public class Autentica {
-
+public interface Autentica {
+	 boolean autentica(int senha);
+	 
 }
