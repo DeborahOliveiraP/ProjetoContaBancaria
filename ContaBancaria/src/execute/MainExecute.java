@@ -18,15 +18,18 @@ public class MainExecute {
 		Conta c1 = new Conta(ttl);
 		
 		do {
-			System.out.println("------ MENU ------");
-			System.out.println("1) DADOS BANCARIO");
-			System.out.println("2) DEPOSITO");
-			System.out.println("3) SAQUE");
-			System.out.println("0) SAIR");
 			
-			System.out.println("------------------");
-			System.out.println("OPCAO: ");
-			opcao = scn.nextInt();
+			System.out.println("Cadastro de pessoa de uma clinica\n"
+					+ "1) DADOS BANCARIO\n"
+					+ "2) DEPOSITO\n"
+					+ "3) SAQUE\n"
+					+ "0) SAIR"
+					+"=====================================================\n"
+					+"Selecione umas das opçoes\n"
+					+"OU tecle em 0 para SAIR do programa...\n"
+					+"====================================================="
+					+"OPCAO: ");
+					opcao = scn.nextInt();
 			
 			if(opcao == 1) {
 				c1.DadosBancarios();
