@@ -11,7 +11,8 @@ public class Cliente extends Conta {
 	private int cpf;
 	private int rg;
 	private String nome;
-	
+	private int senha;
+	private int codigo;
 	
 	public int getCpf() {
 		return cpf;
@@ -30,6 +31,18 @@ public class Cliente extends Conta {
 	}
 	public void setNome(String nome) {
 		this.nome = nome;
+	}
+	public int getId() {
+		return id;
+	}
+	public void setId(int id) {
+		this.id = id;
+	}
+	public int getSenha() {
+		return senha;
+	}
+	public void setSenha(int senha) {
+		this.senha = senha;
 	}
 	
 	
