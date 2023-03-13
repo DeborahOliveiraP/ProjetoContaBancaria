@@ -7,13 +7,13 @@ public class Conta {
 	private double saldo;
 	static int qtdcontas;
 	
-	public Conta(String pTitular) {
-		this.titular = pTitular;
-		qtdcontas++;
-		this.numero = qtdcontas;
-		this.saldo = 0;
-		
-	}
+	public Conta(String titular) {
+        this.numero = numero;
+        this.titular = titular;
+        this.saldo = saldo;
+    }
+	
+	
 	public void DadosBancarios() {
 		System.out.println("-- DADOS BANCARIO --");
 		System.out.println("NUMERO: "+this.numero);
@@ -22,7 +22,6 @@ public class Conta {
 		System.out.println("--------------------");
 		System.out.println("");
 	}
-	
 	public void Depositar(double pValor) {
 		System.out.println("-- RELIZAR DEPOSITO --");
 		System.out.println("SALDO ATUAL: "+this.saldo);
@@ -48,4 +47,25 @@ public class Conta {
 		System.out.println("-- SAQUE REALIZADO COM EXIDO --");
 		System.out.println("");
 	}
+
+	public int getNumero() {
+		return numero;
+	}
+	public void setNumero(int numero) {
+		this.numero = numero;
+	}
+	public String getTitular() {
+		return titular;
+	}
+	public void setTitular(String titular) {
+		this.titular = titular;
+	}
+	public double getSaldo() {
+		return saldo;
+	}
+	public void setSaldo(double saldo) {
+		this.saldo = saldo;
+	}
+	
+
 }
